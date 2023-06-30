@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio- Akshat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5cc4cf5441.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!-- <i class="fa-solid fa-moon" id="darkmode"></i> -->
+            </nav>
+            <div class="header-text">
+                <!-- <p>Full-Stack Developer</p> -->
+                <h3>Hello, It's me</h3>
+                <h1>Akshat Modi</h1>
+                <h3>And I'm a <span class="multi-text"></span></h3>
+            </div>
+        </div>
+    </div>
+    <!-- ==========about section ============== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm a skilled software developer and my technical domain is as Full Stack Developer having specialization in Frontend and Backend development. I have expertise and experience in Python and JavaScript skilled in framework as Flask, BootStrap and Tailwind CSS. I am a quick learner and capable to create efficient, scalable software and solve real-world problem.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>web app development</li>
+                            <li><span>Python Developer</span><br>Build Python based application</li>
+                            <li><span>Full-Stack Developer</span><br>Complete web application</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.Tech(CSE)- 8.46</li>
+                            <li><span>2020</span><br>Higer Secondary- 88%</li>
+                            <li><span>2018</span><br>Secondary- 78.2%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Industrial Trainee</span><br>Cloud Based Full Stack Developmnet in Python Django</li>
+                            <li><span>Web Development Intern</span><br>Build Web Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================service section====================== -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I'm a skilled web developer possess expertise in creating visually captivating and responsive websites using variety of technology as HTML, Tailwind CSS, JavaScript, API and also enthusiast in learning new technologies as SEO skills, Web Testing and Debugging.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Developer</h2>
+                    <p>With a specialization in Python development, I excel in builing robust applications, API's and web services that cater to specific business needs. I have deep understanding in Flask, to create robust web application and eager to learn about Django. Also in several framework and libraries.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript Developer</h2>
+                    <p>As a skilled JavaScript developer, I bring a wealth of expertise in creating dynamic and interactive web experiences. Also want to have skill in  ReactJs and Vue.Js and Angular.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- =================portfolio===================== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="img/test1.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>FindMyDairyFarmer</h4>
+                        <p>This lists dairy farmer based on location and easy contact option via message.</p>
+                        <a href="https://github.com/Akshat-modi/FindMyDairyFarmer.git" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="img/test2.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Packers and Movers</h4>
+                        <p>A Frontend project for Packers and Movers Company and great UI.</p>
+                        <a href="https://github.com/Akshat-modi/packers-movers.git" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="portfolio-box">
+                    <img src="work.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, itaque tempore.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+                <!-- <div class="portfolio-box">
+                    <img src="work.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, itaque tempore.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="https://github.com/Akshat-modi?tab=repositories" target="_blank" class="btn">See More</a>
+        </div>
+    </section>
+    <!-- =================end of portfolio======================= -->
+
+    <!-- ================contact sectin==================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>akshatmodi1252@gmail.com</p>
+                    <div class="social-media">
+                        <a href="https:/www.linkedin.com/in/akshat-modi-139052229" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Akshat-modi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" placeholder="Enter your Name" name="Name" required>
+                        <input type="email" name="email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="6" required placeholder="Entter your message"></textarea>
+                        <button type="submit" class="btn btn2 add-on">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Akshat. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <!-- types js  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- scroll reveal js  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
